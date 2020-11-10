@@ -41,7 +41,10 @@ def get_japanese_emoticon(path, japanese_emoticon)
     if jap_emoticon == japanese_emoticon
       english_emoticon
     end
-    #translation
+    if translation
+      translation 
+    else 
+      
   end 
 end
 
