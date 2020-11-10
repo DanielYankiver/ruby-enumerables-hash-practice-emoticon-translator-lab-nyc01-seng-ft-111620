@@ -20,11 +20,11 @@ def get_japanese_emoticon(path, english_emoticon)
       emoticon_lib[key][:japanese]
     end
   end
-  # if answer
-  #   answer
-  # else 
-  # "Sorry, that emoticon was not found"
-  # end
+  if answer
+    answer
+  else 
+  "Sorry, that emoticon was not found"
+  end
 end
 
 
