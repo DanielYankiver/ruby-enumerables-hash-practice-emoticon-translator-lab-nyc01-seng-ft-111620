@@ -21,7 +21,7 @@ def get_japanese_emoticon(path, english_emoticon)
     end
   end
   if emoticon_lib[answer][:japanese]
-    answer
+    emoticon_lib[answer][:japanese]
     binding.pry
   else 
   "Sorry, that emoticon was not found"
