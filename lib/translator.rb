@@ -38,6 +38,7 @@ def get_japanese_emoticon(path, japanese_emoticon)
   english_emoticon = emoticon_lib.each do |key|
     jap_emoticon = emoticon_lib[key][:japanese]
     eng_emoticon = emoticon_lib[key][:english]
+      binding.pry
     if jap_emoticon == japanese_emoticon
       eng_emoticon
     end
@@ -46,7 +47,6 @@ def get_japanese_emoticon(path, japanese_emoticon)
     else 
       "Sorry, that emoticon was not found"
     end
-    binding.pry
   end 
 end
 
