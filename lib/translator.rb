@@ -22,6 +22,7 @@ def get_japanese_emoticon(path, english_emoticon)
   end
   if answer
     answer
+    binding.pry
   else 
   "Sorry, that emoticon was not found"
   end
