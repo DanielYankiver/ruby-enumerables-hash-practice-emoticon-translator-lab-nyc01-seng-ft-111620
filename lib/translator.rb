@@ -18,7 +18,7 @@ def get_japanese_emoticon(path, english_emoticon)
   emoticon_lib.keys.each do |key|  # .keys = iterate over .each key 
     if emoticon_lib[key][:english] == english_emoticon 
       emoticon_lib[key][:japanese]
-    end 
+    end
   end
   # if answer
   #   answer
