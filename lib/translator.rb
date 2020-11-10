@@ -35,14 +35,14 @@ def get_japanese_emoticon(path, japanese_emoticon)
   emoticon_lib = load_library(path)
 end
 
-def get_japanese_emoticon(file_path, emoticon)
-  library = load_library(file_path)
-  library["get_emoticon"].each do |key, value|
-    if key == emoticon
-      puts value
-    end
-  end
-end
+# def get_japanese_emoticon(file_path, emoticon)
+#   library = load_library(file_path)
+#   library["get_emoticon"].each do |key, value|
+#     if key == emoticon
+#       puts value
+#     end
+#   end
+# end
 
 
 
