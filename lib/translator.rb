@@ -19,11 +19,10 @@ def get_japanese_emoticon(path, emoticon)
     binding.pry
     if emoticon == emoticon_lib[key][:english]
       emoticon_lib[key][:japanese]
-    else
-      "Sorry, that emoticon was not found"
     end 
   end 
-
+  Sorry, that emoticon was not found"
+end
   #   jap_emoticon = emoticon_lib[key][:japanese]
   #   #eng_emoticon = emoticon_lib[key][:english]
   #   if jap_emoticon == emoticon
@@ -33,9 +32,9 @@ def get_japanese_emoticon(path, emoticon)
   #   if english_emoticon
   #     english_emoticon
   #   else 
-  #     "Sorry, that emoticon was not found"
+  #     "
   #   end
-end
+
 
 
 def get_english_meaning(path, japanese_emoticon)
