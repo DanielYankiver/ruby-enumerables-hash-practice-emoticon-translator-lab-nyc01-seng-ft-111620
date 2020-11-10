@@ -35,7 +35,9 @@ end
 
 def get_japanese_emoticon(path, japanese_emoticon)
   emoticon_lib = load_library(path)
+  translation = emoticon_lib.each do |eng_emoticon, jap_emoticon|
   
+  end 
 end
 
 # def get_japanese_emoticon(file_path, emoticon)
