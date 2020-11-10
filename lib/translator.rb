@@ -23,7 +23,7 @@ def get_japanese_emoticon(path, english_emoticon)
   if emoticon_lib[answer][:japanese]
     emoticon_lib[answer][:japanese]
   else 
-  "Sorry, that emoticon was not found"
+    "Sorry, that emoticon was not found"
   end
 end
 
