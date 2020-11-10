@@ -19,7 +19,7 @@ def get_japanese_emoticon(path, emoticon)
     if emoticon_lib[key][:english] == emoticon 
       emoticon_lib[key][:japanese]
     end 
-    emoticon_lib[key][:japanese] = answer
+    answer = emoticon_lib[key][:japanese] 
   end
   if answer
     answer
