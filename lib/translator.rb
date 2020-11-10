@@ -35,9 +35,10 @@ end
 
 def get_japanese_emoticon(path, japanese_emoticon)
   emoticon_lib = load_library(path)
-  binding.pry
   translation = emoticon_lib.each do |eng_emoticon, jap_emoticon|
-  
+    jap_emoticon = emoticon_lib[:japanese]
+    eng_emoticon = emoticon_lib[:english]
+    binding.pry
   end 
 end
 
