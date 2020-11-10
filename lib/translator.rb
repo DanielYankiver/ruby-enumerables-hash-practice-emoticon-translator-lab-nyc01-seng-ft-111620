@@ -20,12 +20,14 @@ def get_japanese_emoticon(path, english_emoticon)
       emoticon_lib[key][:japanese]
     end
   end
-  if answer = emoticon_lib[answer][:japanese]
+  if answer 
     emoticon_lib[answer][:japanese]
-  elsif answer = nil 
-    "Sorry, that emoticon was not found"
+  else 
+    return "Sorry, that emoticon was not found"
   end
 end
+
+
 
 
 def get_english_meaning(path, japanese_emoticon)
