@@ -13,6 +13,23 @@ def load_library(path)
   emoticon_lib
 end
 
+def get_japanese_emoticon(path, japanese_emoticon)
+  emoticon_lib = load_library(path)
+  english_emoticon = emoticon_lib.each do |key|
+    binding.pry
+    jap_emoticon = emoticon_lib[key][:japanese]
+    #eng_emoticon = emoticon_lib[key][:english]
+    if jap_emoticon == japanese_emoticon
+      eng_emoticon
+    end
+  end
+    if english_emoticon
+      english_emoticon
+    else 
+      "Sorry, that emoticon was not found"
+    end
+end
+
 
 def get_english_meaning(path, japanese_emoticon)
   emoticon_lib = load_library(path)
@@ -33,22 +50,7 @@ end
 # will take a traditional Western emoticon (e.g. :)) 
 # and translate it to its Japanese version ((＾ｖ＾)
 
-def get_japanese_emoticon(path, japanese_emoticon)
-  emoticon_lib = load_library(path)
-  english_emoticon = emoticon_lib.each do |key|
-    binding.pry
-    jap_emoticon = emoticon_lib[key][:japanese]
-    #eng_emoticon = emoticon_lib[key][:english]
-    if jap_emoticon == japanese_emoticon
-      eng_emoticon
-    end
-  end
-    if english_emoticon
-      english_emoticon
-    else 
-      "Sorry, that emoticon was not found"
-    end
-end
+
 
 
 
