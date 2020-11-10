@@ -20,7 +20,7 @@ def get_japanese_emoticon(path, english_emoticon)
       emoticon_lib[key][:japanese]
     end
   end
-  if answeramns
+  if emoticon_lib[answer]
     answer
     binding.pry
   else 
