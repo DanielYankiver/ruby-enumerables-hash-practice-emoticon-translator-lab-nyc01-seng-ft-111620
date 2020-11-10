@@ -16,11 +16,10 @@ end
 def get_japanese_emoticon(path, emoticon)
   emoticon_lib = load_library(path)
   emoticon_lib.keys.each do |key|  # .keys = iterate over .each key 
-    answer = emoticon_lib[key][:japanese]
     if emoticon_lib[key][:english] == emoticon 
-      answer
+      emoticon_lib[key][:japanese]
+      binding.pry
     end 
-    #binding.pry
   end
   if answer
     answer
