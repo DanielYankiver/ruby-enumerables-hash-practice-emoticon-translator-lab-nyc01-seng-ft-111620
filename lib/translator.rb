@@ -46,7 +46,7 @@ def get_japanese_emoticon(path, japanese_emoticon)
     else 
       "Sorry, that emoticon was not found"
     end
-    #binding.pry
+    binding.pry
   end 
 end
 
