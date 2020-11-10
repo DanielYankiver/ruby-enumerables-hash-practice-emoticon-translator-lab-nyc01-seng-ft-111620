@@ -35,9 +35,10 @@ end
 
 def get_japanese_emoticon(path, japanese_emoticon)
   emoticon_lib = load_library(path)
-  english_emoticon = emoticon_lib.each do |key, value|
-    jap_emoticon = emoticon_lib[key][value[1]]
-    eng_emoticon = emoticon_lib[key][value[0]]
+  english_emoticon = emoticon_lib.each do |key|
+    jap_emoticon = emoticon_lib[key][:japanese]
+    eng_emoticon = emoticon_lib[key][:english]
+    key = {key[eng_emoticon], key[jap_emoticon]
     if jap_emoticon == japanese_emoticon
       eng_emoticon
     end
