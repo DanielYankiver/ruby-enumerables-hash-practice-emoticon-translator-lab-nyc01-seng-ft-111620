@@ -30,6 +30,8 @@ def get_english_meaning(path, japanese_emoticon)
   # binding.pry 
 end
 
+# will take a traditional Western emoticon (e.g. :)) 
+# and translate it to its Japanese version ((＾ｖ＾)
 
 def get_japanese_emoticon(path, japanese_emoticon)
   emoticon_lib = load_library(path)
