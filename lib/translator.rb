@@ -42,6 +42,7 @@ def get_japanese_emoticon(path, japanese_emoticon)
       english_emoticon
     end
     translation
+    binding.pry
   end 
 end
 
