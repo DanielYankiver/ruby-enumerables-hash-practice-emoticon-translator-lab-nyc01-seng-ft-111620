@@ -39,8 +39,9 @@ def get_japanese_emoticon(path, japanese_emoticon)
     jap_emoticon = emoticon_lib[key][:japanese]
     english_emoticon = emoticon_lib[key][:english]
     if jap_emoticon == japanese_emoticon
-      english_emoticon
       binding.pry
+      english_emoticon
+      
     end
     translation
   end 
