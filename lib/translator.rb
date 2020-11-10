@@ -13,6 +13,7 @@ def load_library(path)
   emoticon_lib
 end
 
+
 def get_japanese_emoticon(path, english_emoticon)
   emoticon_lib = load_library(path)
   answer = emoticon_lib.keys.find do |key|  # .keys = iterate over .each key 
@@ -26,8 +27,6 @@ def get_japanese_emoticon(path, english_emoticon)
     "Sorry, that emoticon was not found"
   end
 end
-
-
 
 
 def get_english_meaning(path, japanese_emoticon)
