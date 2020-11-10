@@ -40,9 +40,10 @@ def get_japanese_emoticon(path, japanese_emoticon)
     english_emoticon = emoticon_lib[key][:english]
     if japanese_emoticon
       english_emoticon
+      binding.pry
     end
     translation
-    binding.pry
+    
   end 
 end
 
