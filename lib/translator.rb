@@ -38,6 +38,7 @@ def get_japanese_emoticon(path, japanese_emoticon)
   translation = emoticon_lib.each do |key, english_emoticon|
     japanese_emoticon = emoticon_lib[key][:japanese]
     english_emoticon = emoticon_lib[key][:english]
+    binding.pry
     
   end 
 end
