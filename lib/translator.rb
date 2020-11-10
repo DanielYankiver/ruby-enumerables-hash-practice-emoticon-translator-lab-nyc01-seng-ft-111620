@@ -18,14 +18,13 @@ def get_japanese_emoticon(path, emoticon)
   emoticon_lib.keys.each do |key|  # .keys = iterate over .each key 
     if emoticon_lib[key][:english] == emoticon 
       emoticon_lib[key][:japanese]
-      binding.pry
     end 
   end
-  if answer
-    answer
-  else 
+  # if answer
+  #   answer
+  # else 
   "Sorry, that emoticon was not found"
-  end
+  # end
 end
 
 
